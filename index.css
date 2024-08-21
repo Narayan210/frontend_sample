@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #080808;
+    color: #fff;
+    
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 140px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style:none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover{
+    color:#4c3737;
+    transition: 0.2ms;
+}
+
+.home-text{
+    margin-top: 20%;
+}
+
+.home-text p{
+    font-size:32px;
+    font-weight: 900;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+}
+.home-text h1 span{
+    color: brown;
+}
+
+button{
+    padding-left: 10px 5%;
+    margin-left: 120px;
+    margin-top: 5%;
+    background-color:brown;
+    align-items: center;
+    width: 13%;
+    height: 40px;
+    border: #080808;
+    border-radius:30px;
+    overflow: hidden;
+}
+
+button:hover{
+    background-color: rgb(169, 76, 38);
+    color: #fff;
+    overflow: hidden;
+}
+
+button a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* ------------about---------- */
+
+#about{
+    padding: 80px 0;
+    color: #ababab;
+
+}
+
+.row{
+    display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+}
+
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.sub-title{
+    font-size: 60px;
+    font-weight:600 ;
+    color: #fff;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content:'';
+    width: 0;
+    height: 3px;
+    background-color: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.25s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
